@@ -25,19 +25,6 @@ html {
   box-sizing: border-box;
 }
 
-body {
-  position: relative;
-  height: 100%;
-  background-position: no-repeat bottom center fixed;
-  background-size: cover;
-}
-
-
-main{
-	height: 100vh;
-	margin-bottom: 160px;
-}
-
 nav {
 	width: 100%;
 	background-color: $brand;
@@ -68,7 +55,7 @@ nav {
 }
 
 section {
-    margin: 0px auto;
+    margin: 0px auto 100px;
     max-width: 560px;
 }
 
@@ -76,6 +63,7 @@ article {
     padding: 42px 16px;
     height: 80px;
     border-bottom: 1px solid $light-grey;
+    border-radius: 6px;
     display: flex;
     align-items: center;
 	transition: all 0.4s ease;

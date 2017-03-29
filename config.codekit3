@@ -49,6 +49,16 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/images\/offline.png": {
+		"ft": 32768,
+		"iS": 18663,
+		"l": 1,
+		"oA": 0,
+		"oAP": "\/images\/offline.png",
+		"oF": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/index.html": {
 		"ft": 8192,
 		"oA": 2,

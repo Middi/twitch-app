@@ -19,7 +19,7 @@ if (online !== null) {
 }
 
 else if (online === null) {
-    avatar = "http://placehold.it/100x100";
+    avatar = "images/offline.png";
 }
 
 if (online === null) {
@@ -33,7 +33,7 @@ if (online === null) {
     }
     else {
          // --- Add To Dom --- //
-        $("section").append('<a href="https://www.twitch.tv/' + element + '"><article><div class="avatar"><img src="' + avatar + '"></div><div class="description"><h4>' + element + '</h4><p>' + game + '</p></div><div class="status"><i class="fa fa-circle online" aria-hidden="true"></i></div></article></a>');
+        $("section").append('<a class="online-stream" href="https://www.twitch.tv/' + element + '"><article><div class="avatar"><img src="' + avatar + '"></div><div class="description"><h4>' + element + '</h4><p>' + game + '</p></div><div class="status"><i class="fa fa-circle online" aria-hidden="true"></i></div></article></a>');
     }
     });
 
