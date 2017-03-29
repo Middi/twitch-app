@@ -54,7 +54,23 @@ nav {
     }
 }
 
+.toggle {
+    margin: 0px auto 10px;
+    width: 560px;
+    height: 70px;
+    background: $brand;
+    padding: 24px 16px;
+    display: table;
+}
+
+.status-links {
+    text-align: right;
+    display: table-cell;
+    vertical-align: middle;
+    color: white;
+}
 section {
+    clear: both;
     margin: 0px auto 100px;
     max-width: 560px;
 }
@@ -101,7 +117,8 @@ article {
 }
 
 footer {
-	background: rgba(0, 0, 0, 0.4);
+	background: $brand;
+    height: 56px;
 	display: table;
 	width: 100%;
     text-align: center;

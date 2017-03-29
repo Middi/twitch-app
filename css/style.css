@@ -45,8 +45,10 @@ table {
 a {
   text-decoration: none; }
 
-input {
-  -webkit-appearance: none; }
+input, select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
 
 html {
   font-size: 14px; }
@@ -81,10 +83,12 @@ p {
 
 a {
   text-decoration: none;
-  color: #0d0c0c; }
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600; }
 
 a:hover {
-  color: #403f3f; }
+  text-decoration: underline; }
 
 small {
   font-size: 0.707em; }
@@ -103,25 +107,25 @@ em {
   font-size: 40px; }
 
 nav a {
-  color: white; }
+  font-size: 1.8rem;
+  color: white;
+  font-weight: 300; }
   nav a:hover {
     color: white; }
 
-footer p {
+.built {
+  color: white;
   font-size: 0.9em;
   padding: 4px;
-  font-weight: 300;
-  color: white; }
-  footer p strong {
-    font-weight: 400;
-    color: white; }
+  font-weight: 300; }
+  .built strong {
+    font-weight: 400; }
 
 .built a, .built p {
   font-size: 0.8rem;
   transition: all 0.6s ease; }
 
 .built a:hover {
-  color: white;
   text-decoration: underline; }
 
 .btn {
@@ -169,6 +173,12 @@ footer p {
 .center {
   text-align: center; }
 
+.hidden {
+  display: none; }
+
+.visible {
+  display: block; }
+
 html {
   max-height: 100vh;
   box-sizing: border-box; }
@@ -198,7 +208,22 @@ nav {
   .main-logo img {
     width: 300px; }
 
+.toggle {
+  margin: 0px auto 10px;
+  width: 560px;
+  height: 70px;
+  background: #502f92;
+  padding: 24px 16px;
+  display: table; }
+
+.status-links {
+  text-align: right;
+  display: table-cell;
+  vertical-align: middle;
+  color: white; }
+
 section {
+  clear: both;
   margin: 0px auto 100px;
   max-width: 560px; }
 
@@ -236,7 +261,8 @@ article {
   color: #aa0000; }
 
 footer {
-  background: rgba(0, 0, 0, 0.4);
+  background: #502f92;
+  height: 56px;
   display: table;
   width: 100%;
   text-align: center; }
