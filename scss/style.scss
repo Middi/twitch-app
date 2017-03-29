@@ -1,0 +1,30 @@
+/*
+Name: Twitch App
+URL: https://richardmiddleton.me/twitch-app
+Author: Richard Middleton
+Author URL: https://richardmiddleton.me
+Description: Create a twitch app to show channels online and offline from curated list.
+Version: 1.0
+License: MIT License
+License URI: https://opensource.org/licenses/MIT
+*/
+
+
+
+@import "normalise";
+@import "colors";
+@import "typography";
+@import "buttons";
+@import "utilities";
+
+body {background: $background}
+
+section {
+    max-width: 740px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+article {margin: 52px 0}
+
+@import "media-queries";
