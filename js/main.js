@@ -24,16 +24,16 @@ else if (online === null) {
 
 if (online === null) {
 // --- Add To Dom --- //
-        $("section").append('<a href="https://www.twitch.tv/' + element + '"><article><div class="avatar"><img src="' + avatar + '"></div><div class="description"><h4>' + element + '</h4><p>Currently not Streaming</p></div><div class="status"><i class="fa fa-circle offline" aria-hidden="true"></i></div></article></a>');
+        $("section").append('<a href="https://www.twitch.tv/' + element + '" target="_blank"><article><div class="avatar"><img src="' + avatar + '"></div><div class="description"><h4>' + element + '</h4><p>Currently not Streaming</p></div><div class="status"><i class="fa fa-circle fa-lg offline" aria-hidden="true"></i></div></article></a>');
     }
 
     else if (online === undefined) {
         // --- Add To Dom --- //
-        $("section").append('<a href="#"><article><div class="avatar"><img src="' + avatar + '"></div><div class="description"><h4>' + element + '</h4><p>User Doesnt exist</p></div><div class="status"><i class="fa fa-circle offline" aria-hidden="true"></i></div></article></a>');
+        $("section").append('<a href="#"><article><div class="avatar"><img src="' + avatar + '"></div><div class="description"><h4>' + element + '</h4><p>User Doesnt exist</p></div><div class="status"><i class="fa fa-circle fa-lg offline" aria-hidden="true"></i></div></article></a>');
     }
     else {
          // --- Add To Dom --- //
-        $("section").append('<a class="online-stream" href="https://www.twitch.tv/' + element + '"><article><div class="avatar"><img src="' + avatar + '"></div><div class="description"><h4>' + element + '</h4><p>' + game + '</p></div><div class="status"><i class="fa fa-circle online" aria-hidden="true"></i></div></article></a>');
+        $("section").append('<a class="online-stream" href="https://www.twitch.tv/' + element + '" target="_blank"><article><div class="avatar"><img src="' + avatar + '"></div><div class="description"><h4>' + element + '</h4><p>' + game + '</p></div><div class="status"><i class="fa fa-circle  fa-lg online" aria-hidden="true"></i></div></article></a>');
     }
     });
 

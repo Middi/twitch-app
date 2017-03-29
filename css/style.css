@@ -100,12 +100,12 @@ em {
   color: #fc2d23; }
 
 .large {
-  font-size: 240px; }
+  font-size: 40px; }
 
 nav a {
   color: white; }
   nav a:hover {
-    color: #cccccc; }
+    color: white; }
 
 footer p {
   font-size: 0.9em;
@@ -203,7 +203,7 @@ section {
   max-width: 560px; }
 
 article {
-  padding: 42px 16px;
+  padding: 42px 22px 42px 16px;
   height: 80px;
   border-bottom: 1px solid #dfdfdf;
   border-radius: 6px;
@@ -255,7 +255,7 @@ footer {
   main {
     margin-bottom: 20px; }
   article {
-    padding: 36px 15px;
+    padding: 36px 32px 36px 15px;
     height: 65px;
     border-radius: 0; }
   .avatar {
