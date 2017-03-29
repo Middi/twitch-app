@@ -15,21 +15,21 @@ online = data.stream;
 
 if (online !== null) {
     game = online.game;
+    avatar = online.channel.logo;
 }
 
-
-if (online !== null) {
-    avatar = online.channel.logo;
+else if (online === null) {
+    avatar = "http://placehold.it/100x100";
 }
 
 if (online === null) {
 // --- Add To Dom --- //
-        $("section").append('<a href="https://www.twitch.tv/' + element + '"><article><div class="avatar"><img src="images/fcc-logo.png"></div><div class="description"><h4>' + element + '</h4><p>Currently not Streaming</p></div><div class="status"><i class="fa fa-circle offline" aria-hidden="true"></i></div></article></a>');
+        $("section").append('<a href="https://www.twitch.tv/' + element + '"><article><div class="avatar"><img src="' + avatar + '"></div><div class="description"><h4>' + element + '</h4><p>Currently not Streaming</p></div><div class="status"><i class="fa fa-circle offline" aria-hidden="true"></i></div></article></a>');
     }
 
     else if (online === undefined) {
         // --- Add To Dom --- //
-        $("section").append('<a href="#"><article><div class="avatar"><img src="images/fcc-logo.png"></div><div class="description"><h4>' + element + '</h4><p>User Doesnt exist</p></div><div class="status"><i class="fa fa-circle offline" aria-hidden="true"></i></div></article></a>');
+        $("section").append('<a href="#"><article><div class="avatar"><img src="' + avatar + '"></div><div class="description"><h4>' + element + '</h4><p>User Doesnt exist</p></div><div class="status"><i class="fa fa-circle offline" aria-hidden="true"></i></div></article></a>');
     }
     else {
          // --- Add To Dom --- //
