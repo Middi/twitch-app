@@ -137,11 +137,11 @@ footer p {
     transform: scale(0.98); }
 
 .btn-outline {
-  color: #502f91;
-  border: 2px solid #502f91;
+  color: #502f92;
+  border: 2px solid #502f92;
   padding: 0.52em 1.1em; }
   .btn-outline:hover {
-    background-color: #502f91;
+    background-color: #502f92;
     color: #fbfbfb; }
 
 .btn-round {
@@ -151,9 +151,9 @@ footer p {
   font-size: 0.707em; }
 
 .bg-brand {
-  background-color: #502f91; }
+  background-color: #502f92; }
   .bg-brand:hover {
-    background-color: #45297e; }
+    background-color: #45297f; }
 
 .bg-alt {
   background-color: #862bab; }
@@ -181,11 +181,11 @@ body {
 
 main {
   height: 100vh;
-  margin-top: -56px; }
+  margin-bottom: 260px; }
 
 nav {
   max-width: 100%;
-  background-color: #502f91;
+  background-color: #502f92;
   height: 56px;
   margin: 0 auto;
   display: -webkit-box;
@@ -200,8 +200,14 @@ nav {
   -ms-grid-row-align: center;
   align-self: center; }
 
+.main-logo {
+  margin: 50px auto;
+  width: 300px; }
+  .main-logo img {
+    width: 300px; }
+
 section {
-  margin: 200px auto;
+  margin: 60px auto;
   max-width: 600px;
   min-height: 600px; }
 
@@ -231,15 +237,13 @@ article {
 .online {
   color: #00aa00; }
 
+.offline {
+  color: #aa0000; }
+
 footer {
   background: rgba(0, 0, 0, 0.4);
   display: table;
   width: 100%;
-  text-align: center;
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  left: 0;
   text-align: center; }
 
 .built {

@@ -1,21 +1,43 @@
 $(document).ready(function () {
 
-var channels = ["ESL_SC2", "OgamingSC2", "cretetion", "freecodecamp", "storbeck", "habathcx", "RobotCaleb", "noobs2ninjas"];
+    var channels = ["ESL_SC2", "OgamingSC2", "cretetion", "freecodecamp", "storbeck", "habathcx", "RobotCaleb", "noobs2ninjas", "brunofin"];
 
-var data;
+    var game;
+    var online;
+    var avatar;
 
-$.getJSON('https://wind-bow.gomix.me/twitch-api/streams/freecodecamp?callback=?', function(data) {
+    channels.forEach(function (element) {
+
+            $.getJSON('https://wind-bow.gomix.me/twitch-api/streams/' + element +'?callback=?', function (data) {
+
+online = data.stream;
 
 
-console.log(data);
+if (online !== null) {
+    game = online.game;
+}
 
-});
 
-channels.forEach(function(element) {
-    
-    
-    
-    console.log(element);
-});
+if (online !== null) {
+    avatar = online.channel.logo;
+}
+
+if (online === null) {
+// --- Add To Dom --- //
+        $("section").append('<a href="https://www.twitch.tv/' + element + '"><article><div class="avatar"><img src="images/fcc-logo.png"></div><div class="description"><h4>' + element + '</h4><p>Currently not Streaming</p></div><div class="status"><i class="fa fa-circle offline" aria-hidden="true"></i></div></article></a>');
+    }
+
+    else if (online === undefined) {
+        // --- Add To Dom --- //
+        $("section").append('<a href="#"><article><div class="avatar"><img src="images/fcc-logo.png"></div><div class="description"><h4>' + element + '</h4><p>User Doesnt exist</p></div><div class="status"><i class="fa fa-circle offline" aria-hidden="true"></i></div></article></a>');
+    }
+    else {
+         // --- Add To Dom --- //
+        $("section").append('<a href="https://www.twitch.tv/' + element + '"><article><div class="avatar"><img src="' + avatar + '"></div><div class="description"><h4>' + element + '</h4><p>' + game + '</p></div><div class="status"><i class="fa fa-circle online" aria-hidden="true"></i></div></article></a>');
+    }
+    });
+
+
+    });
 
 });

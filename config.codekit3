@@ -39,6 +39,16 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/images\/logo.png": {
+		"ft": 32768,
+		"iS": 10738,
+		"l": 1,
+		"oA": 0,
+		"oAP": "\/images\/logo.png",
+		"oF": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/index.html": {
 		"ft": 8192,
 		"oA": 2,
