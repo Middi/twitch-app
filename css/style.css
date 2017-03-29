@@ -49,7 +49,7 @@ input {
   -webkit-appearance: none; }
 
 html {
-  font-size: 16px; }
+  font-size: 14px; }
 
 body {
   font-family: 'Open Sans';
@@ -181,13 +181,15 @@ body {
 
 main {
   height: 100vh;
-  margin-bottom: 260px; }
+  margin-bottom: 160px; }
 
 nav {
-  max-width: 100%;
+  width: 100%;
   background-color: #502f92;
   height: 56px;
+  top: 0;
   margin: 0 auto;
+  position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -201,22 +203,24 @@ nav {
   align-self: center; }
 
 .main-logo {
-  margin: 50px auto;
+  margin: 120px auto 60px;
   width: 300px; }
   .main-logo img {
     width: 300px; }
 
 section {
-  margin: 60px auto;
-  max-width: 600px;
-  min-height: 600px; }
+  margin: 0px auto;
+  max-width: 560px; }
 
 article {
-  margin: 30px 56px;
+  padding: 42px 16px;
   height: 80px;
   border-bottom: 1px solid #dfdfdf;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  transition: all 0.4s ease; }
+  article:hover {
+    background-color: #ececec; }
 
 .avatar {
   width: 56px; }
@@ -256,5 +260,15 @@ footer {
 /* -- BREAK 1 -- */
 @media all and (max-width: 800px) {
   html {
-    font-size: 18px;
-    line-height: 1.4; } }
+    font-size: 14px; }
+  main {
+    margin-bottom: 20px; }
+  article {
+    padding: 36px 15px;
+    height: 65px; }
+  .avatar {
+    width: 48px; }
+  .avatar img {
+    border-radius: 6px;
+    width: 48px;
+    height: auto; } }

@@ -8,7 +8,27 @@
 
 @media all and (max-width: 800px) {
   html {
-    font-size: 18px;
-    line-height: 1.4;
+    font-size: 14px;
   }
+
+  main{
+	margin-bottom: 20px;
+}
+
+
+  article {
+    padding: 36px 15px;
+    height: 65px;
+}
+
+  .avatar {
+    width: 48px;
+}
+
+.avatar img {
+    border-radius: 6px;
+    width: 48px;
+    height: auto;
+}
+
 }

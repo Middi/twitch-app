@@ -35,14 +35,16 @@ body {
 
 main{
 	height: 100vh;
-	margin-bottom: 260px;
+	margin-bottom: 160px;
 }
 
 nav {
-	max-width: 100%;
+	width: 100%;
 	background-color: $brand;
 	height: 56px;
+    top: 0;
 	margin: 0 auto;
+    position: fixed;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -58,7 +60,7 @@ nav {
 }
 
 .main-logo {
-    margin: 50px auto;
+    margin: 120px auto 60px;
     width: 300px;
     img{
         width: 300px;
@@ -66,17 +68,20 @@ nav {
 }
 
 section {
-    margin: 60px auto;
-    max-width: 600px;
-    min-height: 600px;
+    margin: 0px auto;
+    max-width: 560px;
 }
 
 article {
-    margin: 30px 56px;
+    padding: 42px 16px;
     height: 80px;
     border-bottom: 1px solid $light-grey;
     display: flex;
     align-items: center;
+	transition: all 0.4s ease;
+    &:hover {
+        background-color: lighten($light-grey, 5)
+}
 }
 
 .avatar {
