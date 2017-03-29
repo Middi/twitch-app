@@ -38,6 +38,19 @@ if (online === null) {
     });
 
 
-    });
+});
 
+  $('.toggle-all').on('click', function () {
+        
+        $("section").children().addClass("visible");
+        $(this).css({ 'color': 'white' });
+      });
+
+
+       $('.toggle-online').on('click', function () {
+        
+        $("section").find(".online-stream").addClass("visible");
+        $("section").find(".offline-stream").addClass("hidden");
+        $(this).css({ 'color': 'white' });
+      });
 });

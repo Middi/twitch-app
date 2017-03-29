@@ -221,6 +221,11 @@ nav {
   display: table-cell;
   vertical-align: middle;
   color: white; }
+  .status-links a {
+    color: #bdaae3; }
+
+.toggle-all {
+  color: white; }
 
 section {
   clear: both;

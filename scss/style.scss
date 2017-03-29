@@ -68,7 +68,14 @@ nav {
     display: table-cell;
     vertical-align: middle;
     color: white;
+    a {
+    color: lighten($brand, 40);
+    }
 }
+
+.toggle-all {color: white}
+
+
 section {
     clear: both;
     margin: 0px auto 100px;
