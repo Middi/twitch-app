@@ -17,14 +17,100 @@ License URI: https://opensource.org/licenses/MIT
 @import "buttons";
 @import "utilities";
 
-body {background: $background}
 
-section {
-    max-width: 740px;
-    margin: 0 auto;
-    padding: 0 20px;
+// ------- Page Contents -------- //
+
+html {
+  max-height: 100vh;
+  box-sizing: border-box;
 }
 
-article {margin: 52px 0}
+body {
+  position: relative;
+  height: 100%;
+  background-position: no-repeat bottom center fixed;
+  background-size: cover;
+}
+
+
+main{
+	height: 100vh;
+	margin-top: -56px;
+}
+
+nav {
+	max-width: 100%;
+	background-color: $brand;
+	height: 56px;
+	margin: 0 auto;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+.logo {
+	-ms-flex-item-align: center;
+	-ms-grid-row-align: center;
+	align-self: center;
+}
+
+section {
+    margin: 200px auto;
+    max-width: 600px;
+    min-height: 600px;
+}
+
+article {
+    margin: 30px 56px;
+    height: 80px;
+    border-bottom: 1px solid $light-grey;
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    width: 56px;
+}
+
+.avatar img {
+    border-radius: 6px;
+    width: 56px;
+    height: auto;
+}
+
+.description {
+    padding: 0 14px;
+    flex-grow: 1;
+}
+
+.status {
+    width: auto;
+    height: auto;
+}
+
+.online {
+    color: #00aa00;
+}
+
+footer {
+	background: rgba(0, 0, 0, 0.4);
+	display: table;
+	width: 100%;
+	text-align: center;
+	position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+}
+
+.built {
+	display: table-cell;
+	vertical-align: middle;
+}
+
 
 @import "media-queries";

@@ -1,0 +1,1 @@
+$(document).ready(function(){var o=["ESL_SC2","OgamingSC2","cretetion","freecodecamp","storbeck","habathcx","RobotCaleb","noobs2ninjas"],c;$.getJSON("https://wind-bow.gomix.me/twitch-api/streams/freecodecamp?callback=?",function(o){console.log(o)}),o.forEach(function(o){console.log(o)})});
