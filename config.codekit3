@@ -49,6 +49,25 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/images\/no-user.jpg": {
+		"ft": 16384,
+		"iS": 11496,
+		"oA": 0,
+		"oAP": "\/images\/no-user.jpg",
+		"oF": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/images\/no-user.png": {
+		"ft": 32768,
+		"iS": 5572,
+		"l": 1,
+		"oA": 0,
+		"oAP": "\/images\/no-user.png",
+		"oF": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/images\/offline.png": {
 		"ft": 32768,
 		"iS": 18663,
